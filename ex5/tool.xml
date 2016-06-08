@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<run>
+    <tool>
+        <title>Spirograph Tool</title>
+        <about>Spirograph Tool</about>
+        <command>matlab -nodisplay -r infile='@driver',path('@tool',path),main</command>
+    </tool>
+    <input>
+        <number id="n1">
+            <about>
+                <label>n1:</label>
+                <description>num #1</description>
+            </about>
+            <default>13</default>
+        </number>
+        <number id="n2">
+            <about>
+                <label>n2:</label>
+                <description>num #2</description>
+            </about>
+            <default>-7</default>
+        </number>
+        <number id="n3">
+            <about>
+                <label>n3:</label>
+                <description>num #3</description>
+            </about>
+            <default>-3</default>
+        </number>
+    </input>
+    <output>
+        <curve id="value9">
+            <about>
+                <label>Spirograph</label>
+                <description>plooottt</description>
+            </about>
+            <xaxis>
+                <label>real(z)</label>
+                <description>real part</description>
+            </xaxis>
+            <yaxis>
+                <label>imag(z)</label>
+                <description>imag part</description>
+            </yaxis>
+        </curve>
+    </output>
+</run>

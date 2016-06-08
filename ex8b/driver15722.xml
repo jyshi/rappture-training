@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<run>
+    <tool>
+        <title>Count letters</title>
+        <about>count # of letters of the string</about>
+        <command>@tool/mainc @driver</command>
+        <version>
+            <application>
+                <directory id="tool">/home/nanohub/jyshi/ex8b</directory>
+            </application>
+        </version>
+        <name>Workspace</name>
+    </tool>
+    <input>
+        <string id="value1">
+            <about>
+                <label>Input text:</label>
+                <description>input text</description>
+            </about>
+            <size>5x10</size>
+            <current></current>
+        </string>
+    </input>
+    <output>
+        <histogram id="value2">
+            <about>
+                <label>Letter usage</label>
+                <description>the hist of letters</description>
+            </about>
+            <xaxis>
+                <label>Letter</label>
+                <description>the letters</description>
+            </xaxis>
+            <yaxis>
+                <label>Count </label>
+                <description># of letters</description>
+            </yaxis>
+        </histogram>
+    </output>
+</run>
+

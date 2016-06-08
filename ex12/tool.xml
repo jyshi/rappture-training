@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<run>
+    <tool>
+        <title>ex12</title>
+        <about>This is example 12</about>
+        <command>octave --silent --eval infile='@driver',path('@tool',path),main</command>
+    </tool>
+    <input>
+        <integer id="numax">
+            <about>
+                <label>Max Order:</label>
+                <description>max order</description>
+            </about>
+            <default>10</default>
+        </integer>
+        <number id="xmax">
+            <about>
+                <label>Max X:</label>
+                <description>max x</description>
+            </about>
+            <default>20</default>
+        </number>
+        <integer id="npts">
+            <about>
+                <label>Grid points</label>
+                <description>grid points</description>
+            </about>
+            <default>20</default>
+        </integer>
+    </input>
+    <output>
+        <mesh id="mygrid">
+            <dim>2</dim> <units>um</units>
+        </mesh>
+
+        <field id="z">
+            <about>
+                <label>Bessel function surface</label>
+            </about>
+            <component>
+            </component>
+        </field>
+    </output>
+</run>

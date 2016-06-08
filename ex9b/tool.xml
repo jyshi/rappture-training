@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<run>
+    <tool>
+        <title>hw9b</title>
+        <about>999</about>
+        <command>@tool/mainf77 @driver</command>
+    </tool>
+    <input>
+        <string id="value1">
+            <about>
+                <label>Input text:</label>
+                <description>1111</description>
+            </about>
+            <size>20x10</size>
+        </string>
+    </input>
+    <output>
+        <histogram id="value6">
+            <about>
+                <label>Letter usage</label>
+                <description>letter usage</description>
+            </about>
+            <xaxis>
+                <label>Letter</label>
+                <description>111</description>
+            </xaxis>
+            <yaxis>
+                <label>Count</label>
+                <description>222</description>
+            </yaxis>
+        </histogram>
+    </output>
+</run>

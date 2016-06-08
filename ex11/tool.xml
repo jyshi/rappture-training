@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<run>
+    <tool>
+        <title>ex11</title>
+        <about>111</about>
+        <command>python @tool/main.py @driver</command>
+    </tool>
+    <input>
+        <boolean id="value1">
+            <about>
+                <label>Solid eyes</label>
+                <description>111</description>
+            </about>
+            <default>yes</default>
+        </boolean>
+        <string id="value3">
+            <about>
+                <label>Name:</label>
+                <description>111</description>
+            </about>
+        </string>
+        
+        <drawing>
+        <background>
+            <aspect>1 1</aspect>
+        </background>
+        <substitutions>
+            <variable>
+                <name>person</name>
+                <path>input.string(value3)</path>
+            </variable>
+            <variable>
+                <name>color</name>
+                <path>input.boolean(value1)</path>
+                <map><from>yes</from><to>black</to></map>
+                <map><from>no</from><to>yellow</to></map>
+            </variable>
+        </substitutions>
+        <components>
+            <oval>
+                <coords>.25 .25 .75 .75</coords>
+                <outline>black</outline>
+                <fill>yellow</fill>
+            </oval>
+            <rectangle>
+                <coords>.4 .35 .45 .45</coords>
+                <fill>${color}</fill>
+            </rectangle>
+            <rectangle>
+                <coords>.55 .35 .6 .45</coords>
+                <fill>${color}</fill>
+            </rectangle>
+            <line>
+                <coords>.4 .65 .6 .65</coords>
+                <color>black</color>
+            </line>
+            <text>
+                <coords>.5 .5</coords>
+                <text>Hello, ${person}!</text>
+            </text>
+        </components>
+        </drawing>
+    </input>
+</run>

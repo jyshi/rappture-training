@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<run>
+    <tool>
+        <title>Count letters</title>
+        <about>count # of letters of the string</about>
+        <command>@tool/mainc @driver</command>
+        <version>
+            <application>
+                <directory id="tool">/home/nanohub/jyshi/ex8b</directory>
+            </application>
+            <rappture>
+                <language>c</language>
+                <version>1.6</version>
+                <revision>6323</revision>
+                <modified>$LastChangedDate: 2016-05-04 14:27:22 -0400 (Wed, 04 May 2016) $</modified>
+            </rappture>
+        </version>
+        <name>Workspace</name>
+    </tool>
+    <input>
+        <string id="value1">
+            <about>
+                <label>Input text:</label>
+                <description>input text</description>
+            </about>
+            <size>5x10</size>
+            <current>abc</current>
+        </string>
+    </input>
+    <output>
+        <histogram id="value2">
+            <about>
+                <label>Letter usage</label>
+                <description>the hist of letters</description>
+            </about>
+            <xaxis>
+                <label>Letter</label>
+                <description>the letters</description>
+            </xaxis>
+            <yaxis>
+                <label>Count</label>
+                <description># of letters</description>
+            </yaxis>
+            <component>
+                <xy>@@RP-ENC:zb64
+H4sIAAAAAAAAA9Pzs/2mB8UAZueN9QwAAAA=
+d 0
+e 0
+f 0
+g 0
+h 0
+i 0
+j 0
+k 0
+l 0
+m 0
+n 0
+o 0
+p 0
+q 0
+r 0
+s 0
+t 0
+u 0
+v 0
+w 0
+x 0
+y 0
+z 0
+</xy>
+            </component>
+        </histogram>
+        <time>Thu Jun  2 11:06:34 2016 EDT</time>
+        <status>0</status>
+        <user>jyshi</user>
+        <host></host>
+    </output>
+</run>
