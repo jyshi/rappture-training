@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<run>
+    <tool>
+        <title>Creating Tools - Assignment #3</title>
+        <about>This simple tool adds or subtracts two integers and produces an integer value.</about>
+        <command>tclsh @tool/main.tcl @driver</command>
+        <version>
+            <application>
+                <directory id="tool">/home/nanohub/jyshi/ex3</directory>
+            </application>
+            <rappture>
+                <version>1.6</version>
+                <revision>6323</revision>
+                <modified>$LastChangedDate: 2013-06-29 17:25:21 -0400 (Sat, 29 Jun 2013) $</modified>
+                <language>tcl</language>
+            </rappture>
+        </version>
+        <name>Workspace</name>
+    </tool>
+    <input>
+        <integer id="v1">
+            <about>
+                <label>Add this</label>
+                <description>First value (v1) in the "v1 + v2" computation performed by this tool.</description>
+            </about>
+            <default>0</default>
+            <current>0</current>
+        </integer>
+        <integer id="v2">
+            <about>
+                <label>To this</label>
+                <description>Second value (v2) in the "v1 + v2" computation performed by this tool.</description>
+            </about>
+            <default>0</default>
+            <current>0</current>
+        </integer>
+        <choice id="op">
+            <about>
+                <label>Operation</label>
+                <description>Selects how the two numbers are combined to produce the result.</description>
+            </about>
+            <option id="1">
+                <about>
+                    <label>Add</label>
+                    <description>Add the two numbers</description>
+                </about>
+            </option>
+            <option id="2">
+                <about>
+                    <label>Subtract</label>
+                    <description>Subtract the two numbers</description>
+                </about>
+            </option>
+            <default>Add</default>
+            <current>Add</current>
+        </choice>
+    </input>
+    <output>
+        <integer id="result">
+            <about>
+                <label>Result</label>
+                <description>Result of adding or subtracting the two input values.</description>
+            </about>
+            <current>0</current>
+        </integer>
+        <time>Tue May 31 14:52:27 EDT 2016</time>
+        <status>ok</status>
+        <user>jyshi</user>
+    </output>
+</run>
+
